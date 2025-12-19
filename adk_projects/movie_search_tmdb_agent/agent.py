@@ -5,10 +5,11 @@ from .tools import get_movie_details
 
 
 root_agent = Agent(
-    name="tool_agent",
+    name="movie_agent",
     model="gemini-2.5-flash",
-    description="Tool agent",
+    description="Details about movies from TMDB",
     instruction="""
+    Present the output in the tabular format.
     You are a helpful assistant that can use the get_movie_details tool.
     Use these movie IDs when the user mentions them:
     - Fight Club: 550

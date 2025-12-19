@@ -10,7 +10,7 @@ docker compose up -d
 
 ```bash
 
-$ docker exec -it <Container> sh
+$ docker exec -it d701e6710aac sh
 sh-5.1# mysql -h 127.0.0.1 -u root -p
 Enter password:
 ...
